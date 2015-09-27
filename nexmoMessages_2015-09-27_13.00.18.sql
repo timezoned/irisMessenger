@@ -1,0 +1,67 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.6.26
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema myDB
+--
+
+CREATE DATABASE IF NOT EXISTS myDB;
+USE myDB;
+
+--
+-- Definition of table `myDB`.`nexmoMessages`
+--
+
+DROP TABLE IF EXISTS `myDB`.`nexmoMessages`;
+CREATE TABLE  `myDB`.`nexmoMessages` (
+  `sysID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `msisdn` varchar(20) DEFAULT NULL,
+  `to` varchar(20) DEFAULT NULL,
+  `messageId` varchar(20) DEFAULT NULL,
+  `text` varchar(200) DEFAULT NULL,
+  `type` varchar(20) DEFAULT NULL,
+  `timeStamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `output` varchar(200) DEFAULT NULL,
+  `scheduled` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `complete` int(11) DEFAULT NULL,
+  `repeatInterval` varchar(10) DEFAULT NULL,
+  `repeatMultiplier` varchar(10) DEFAULT NULL,
+  `method` varchar(10) DEFAULT NULL,
+  `messageStatus` varchar(30) DEFAULT NULL,
+  `outgoingID` varchar(80) DEFAULT NULL,
+  `needHelp` int(11) DEFAULT '0',
+  PRIMARY KEY (`sysID`)
+) ENGINE=MyISAM AUTO_INCREMENT=152 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `myDB`.`nexmoMessages`
+--
+
+/*!40000 ALTER TABLE `nexmoMessages` DISABLE KEYS */;
+LOCK TABLES `nexmoMessages` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `nexmoMessages` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
