@@ -66,12 +66,12 @@ contents:
 ### 30 m V 0 N Jane, I am very sorry to disturb you, after hours, but you are needed at the office immediately! 
 
 ### Lets break down this message:
-30 - is the wait interval
-m  - is the interval multiplier. (lower case) specifies (m)inutes.
-V  - The method which can be (T)ext or (V)oice
-0  - The repeat interval (This is just a one time message).
-N  - The repeat interval which could be (N)one, (m)inutes, (h)ours, (D)ays, (W)eeks, (M)onths, (Y)ears
-Message to speak when it calls us - Jane, I am very sorry to disturb you after hours, but you are needed at the office immediately!
+* **30 - is the wait interval
+* **m  - is the interval multiplier. (lower case) specifies (m)inutes.
+* **V  - The method which can be (T)ext or (V)oice
+* **0  - The repeat interval (This is just a one time message).
+* **N  - The repeat interval which could be (N)one, (m)inutes, (h)ours, (D)ays, (W)eeks, (M)onths, (Y)ears
+* **Message to speak when it calls us - Jane, I am very sorry to disturb you after hours, but you are needed at the office immediately!
 
 ### Result: We will get voice call 30 minutes from when we sent this message saying, Jane, 
  I am very sorry to disturb you after hours, but you are needed at the office immediately!
@@ -87,12 +87,12 @@ the daily messages to begin until 7AM tomorrow,  you know that 7AM is 13 hours a
 ### 13 h T 1 D Good morning Dave, Please take your morning medication now. Have a nice day!    
 
 ### Here's our breakdown:
-13 - the wait interval
-h  - The interval multiplier (h)ours
-T  - The method to contact us (T)ext
-1  - The repeat interval
-D  - The repeat interval multiplier (D)ays
-Message to send back to us - Good morning Dave, Please take your morning medication now.
+* **13 - the wait interval
+* **h  - The interval multiplier (h)ours
+* **T  - The method to contact us (T)ext
+* **1  - The repeat interval
+* **D  - The repeat interval multiplier (D)ays
+* Message to send back to us - Good morning Dave, Please take your morning medication now.
 
 
 I'm sure you can think up a few more. This is merely a starting point, You can add on a more
