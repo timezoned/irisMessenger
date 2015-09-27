@@ -63,9 +63,9 @@ end the date early if its not going well. You could send a text message to sched
 text before you go. You would send a text message to 12028388265 with the following 
 contents:
 
-### 30 m V 0 N Jane, I am very sorry to disturb you, after hours, but you are needed at the office immediately! 
+#### 30 m V 0 N Jane, I am very sorry to disturb you, after hours, but you are needed at the office immediately! 
 
-### Lets break down this message:
+#### Lets break down this message:
 * **30** - is the wait interval
 * **m**  - is the interval multiplier. (lower case) specifies (m)inutes.
 * **V**  - The method which can be (T)ext or (V)oice
@@ -73,7 +73,7 @@ contents:
 * **N**  - The repeat interval which could be (N)one, (m)inutes, (h)ours, (D)ays, (W)eeks, (M)onths, (Y)ears
 * **Message to speak when it calls us** - Jane, I am very sorry to disturb you after hours, but you are needed at the office immediately!
 
-### Result: We will get voice call 30 minutes from when we sent this message saying, Jane, 
+#### Result: We will get voice call 30 minutes from when we sent this message saying, Jane, 
  I am very sorry to disturb you after hours, but you are needed at the office immediately!
 
 
@@ -84,9 +84,9 @@ Your name is Dave and you work on a spaceship. You need a text reminder to take 
 It's 6PM and you take your meds at 7AM every day. Since its only 6PM now and we don't want
 the daily messages to begin until 7AM tomorrow,  you know that 7AM is 13 hours away so You could send this text message  :
 
-### 13 h T 1 D Good morning Dave, Please take your morning medication now. Have a nice day!    
+#### 13 h T 1 D Good morning Dave, Please take your morning medication now. Have a nice day!    
 
-### Here's our breakdown:
+#### Here's our breakdown:
 * **13** - the wait interval
 * **h**  - The interval multiplier (h)ours
 * **T**  - The method to contact us (T)ext
