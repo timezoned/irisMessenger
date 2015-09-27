@@ -1,5 +1,6 @@
 <?PHP
 /*
+Pat Coggins 9/26/2015
 This is our Configuration file for services and DBs
 These variable apply to IrisMessenger.php and 
 myNexmoCallback.php
