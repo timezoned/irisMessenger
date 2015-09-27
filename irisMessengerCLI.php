@@ -1,4 +1,10 @@
 <?PHP
+/*
+Pat Coggins 9/26/2015
+Backend PHP processor to read MySQL DB looking for messages to send using Nexmo gateway
+Messages that fail are requed in the DB to try again. Messages may be sent to using 
+Voice or SMS REST services.
+*/
 include_once('./irisMessengerConfig.php');
 
 date_default_timezone_set(timezone_name_from_abbr('UTC'));
