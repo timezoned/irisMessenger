@@ -1,6 +1,6 @@
 # irisMessenger
 ## Overview:
-This project which we call Iris, My personal Messenger. 
+This project which I / we call Iris, My personal Messenger. 
 In Greek mythology, Iris, is the personification of the rainbow and messenger of the gods.
 Iris is associated with communication, messages, the rainbow, and new endeavors.
 This project exemplifies a myriad of things you can do in everyday life using Nexmo's
